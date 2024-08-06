@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&family=Reenie+Beanie&display=swap");
+
+img {
+  width: 100%;
+  border-radius: 12px;
+  height: 214px;
+
+  object-fit: cover;
+}
+
+body {
+  background-color: #969286;
+  font-family: "Reenie Beanie", cursive;
+}
+#container {
+  max-width: 350px;
+  margin: 0 auto;
+
+  margin-top: 10vh;
+}
+.card {
+  background-color: #e3ded1;
+  padding: 8px;
+
+  border-radius: 12px;
+  border: 1px solid #4f493f;
+}
+.tag {
+  padding: 4px 8px;
+  border: 1px solid #bbac87;
+
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #110d07;
+}
+.name {
+  font-size: 25px;
+  font-size: 40px;
+
+  margin-top: 16px;
+}
+p {
+  font-size: 20px;
+  color: #1a1c11;
+  line-height: 150%;
+  font-weight: 500;
+}
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #a58e74;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #a58e74;
+}
+
+button:hover::before {
+  width: 100%;
+}
+.card-detals {
+  padding: 16px 8px 8px 8px;
+}
